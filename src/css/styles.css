@@ -9,13 +9,21 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: rgb(0, 231, 236);
+  background: radial-gradient(
+    circle,
+    rgba(0, 231, 236, 1) 20%,
+    rgba(34, 60, 186, 1) 81%
+  );
 }
 
 .search {
@@ -56,23 +64,27 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  padding: 32px 156px 36px 156px;
-  gap: 24px;
+  padding: 32px 156px;
+  gap: 20px;
 }
 
 .gallery-item {
   width: calc((100% - 48px) / 3);
   border: 1px solid #808080;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .card-img {
   height: 252px;
   width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .galery-item-description {
   display: flex;
   justify-content: space-around;
-  padding: 4px 0 4px 0;
+  padding: 4px 0;
   flex-wrap: wrap;
 }
 
