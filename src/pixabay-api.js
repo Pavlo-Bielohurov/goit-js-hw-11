@@ -4,7 +4,7 @@ export function getPictures(name) {
   const orientation = 'horizontal';
   const safeSearch = true;
   return fetch(
-    `https://pixabay.com/api?key=${Key_Api}&q=${name}&image_type=${imageType}&orientation=${orientation}&safesearch=${safeSearch}`
+    `https://pixabay.com/api/?key=${Key_Api}&q=${name}&image_type=${imageType}&orientation=${orientation}&safesearch=${safeSearch}`
   ).then(res => {
     console.log(res);
     if (!res.ok) {
